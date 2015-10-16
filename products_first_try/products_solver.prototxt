@@ -1,0 +1,15 @@
+net: "products_train_val.prototxt"
+test_iter: 77 #1000 #check these vals
+test_interval: 200
+base_lr: 0.001
+lr_policy: "step"
+solver_type: SGD
+gamma: 0.2
+stepsize: 1000
+display: 20
+max_iter: 10000
+momentum: 0.8
+weight_decay: 0.0005
+snapshot: 500
+snapshot_prefix: "snapshot_medium_dropout"
+solver_mode: CPU
